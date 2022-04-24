@@ -2,11 +2,11 @@
 $(function () {
 
     
-    // $(".hamburger").click(function () {
+    $(".hamburger").click(function () {
 
-    //   $("ul").toggleClass("active");
+      $("ul").toggleClass("active");
 
-    // });
+    });
 
 
     
@@ -25,16 +25,15 @@ $(function(){
 
     if ($(window).scrollTop ()){
 
-        $('nav').addClass('dark-nav');
+        $('.navigation').addClass('nav-hide-show');
     }
 
 
     else{
-        $('nav').removeClass('dark-nav');
+        $('.navigation').removeClass('nav-hide-show');
     }
 
 })
-
 
 
 });
@@ -44,30 +43,60 @@ $(function(){
 
 //...................Sticky Navbar Ends ...............//
 
-// OwlCarousel starts here 
+// OwlCarousel-1 starts here 
 
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel-1').owlCarousel({
   loop:true,
-  autoplayTimeout:5000,
-  autoplay:true,
-  margin:25, 
-  nav:false,
+  margin:0,
+  nav:true,
+  dots:false,
   responsive:{
       0:{
           items:1
       },
-      768:{
-          items:2
+      600:{
+          items:1
       },
-      992:{
-          items:3
-      },
-
-      1200:{
-        items:3
+      1000:{
+          items:1
       }
   }
 })
 
-// OwlCarousel ends here 
+// OwlCarousel-1 ends here 
 
+
+// owlCarousel starts 2
+$('.owl-carousel-2').owlCarousel({
+  loop:true,
+  margin:0,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayTimedelay:10000,
+  nav:true,
+  dots:false,
+  responsive:{
+      0:{
+          items:2
+      },
+
+      468:{
+          items:2
+      },
+
+
+      768:{
+          items:3
+      },
+      992:{
+          items:4
+      },
+      1200:{
+        items:5
+    }
+
+
+  }
+})
+
+// owlCarousel 2 ends
