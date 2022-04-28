@@ -50,13 +50,13 @@
   
         <ul class="menu">
           <li><a class="active" href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">story</a></li>
-          <li><a href="#">gallary</a></li>
-          <li><a href="#">family</a></li>
-          <li><a href="#">event</a></li>
-          <li><a href="#">rsvp</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#story">story</a></li>
+          <li><a href="#gallary">gallary</a></li>
+          <li><a href="#family">family</a></li>
+          <li><a href="#event">event</a></li>
+          <li><a href="#rsvp">rsvp</a></li>
+          <li><a href="#rsvp">contact</a></li>
         </ul>
   
         <div class="hamburger">
@@ -69,7 +69,7 @@
 
     <!---------------------- navigation ends here ------------------->
 
-    <!---------------------- navigation starts here ------------------->
+    <!---------------------- Carousel-section  starts here ------------------->
  
     <header>
 
@@ -85,11 +85,11 @@
   </div> 
     
     </header>
-    <!---------------------- navigation ends here ------------------->
+    <!---------------------- Carousel-section ends here ------------------->
    
 
   <!----------------------- about-section starts here -------------------->
-         <div class="container about-section padding-both">
+         <div class="container about-section padding-both" id="about">
               <div class="row ">
                  <div class="col-lg-12">
                   <div class="headings">
@@ -151,11 +151,11 @@
 
 
   <!--------------------- Story section starts here --------------------->
-  <div class="container story-section padding-both">
+  <div class="container story-section padding-both" id="story">
 
     <div class="row ">
       <div class="col-lg-12 padding-l-r">
-       <div class="headings">
+       <div class="headings" >
          <h1>STORY</h1>
          <h2>Our Love Story</h2>
        </div>
@@ -238,7 +238,7 @@
 
   <!-------------------- Gallary section starts here -------------------->
    
-  <div class="container-fluid Gallary-section padding-both">
+  <div class="container-fluid Gallary-section padding-both" id="gallary">
        
     <div class="row ">
       <div class="col-lg-12 ">
@@ -305,7 +305,7 @@
 
   <!---------------------- Event Section starts here ------------------->
 
-    <div class="container Event-section padding-both">
+    <div class="container Event-section padding-both" id="event">
       <div class="row ">
         <div class="col-lg-12  ">
          <div class="headings">
@@ -350,7 +350,7 @@
 
    <!----------------- Family_Friedn section starts here --------------->
 
-  <div class="container friend_family-section padding-both">
+  <div class="container friend_family-section padding-both" id="family">
     <div class="row ">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
        <div class="headings">
@@ -459,7 +459,7 @@
 
 
    <!---------------------- RSVP section starts here  ------------------>
-      <div class="container RSVP-section padding-both">
+      <div class="container RSVP-section padding-both" id="rsvp">
              
         <div class="row ">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -471,21 +471,22 @@
        </div>
 
      
-       <form action="#">
+       <form action="#" id="contact">
 
-        <div class="w-50  name">
+        <div class="w-50  name_email">
           <label for="name"></label>
             <input type="text" type="name" id="name" placeholder="your name" required autocapitalize="off">
         </div>
 
-        <div class="w-50 name">
+        <div class="w-50 name_email">
            <label for="email"></label>
             <input type="email" type="email" id="email" placeholder="your email" required autocomplete="off">
         </div>     
                 
 
-        <div class="w-50 person">
-          <select class="People " id="People " name="People ">              
+        <div class="w-50 people_event">
+          <label for="people"></label>
+          <select class="people " id="people" name="People " required>              
               <option value="People ">Number Of Guest </option>
               <option value="1">1 </option>
               <option value="2">2</option>
@@ -494,24 +495,24 @@
             </select>
       </div>
 
-      <div class="w-50 events">
-        <label for="event"></label>
-        <select class="event" id="event " name="event">
-            
-            <option value="People ">I'm Attending </option>
+      <div class="w-50 people_event">
+        <label for="event"></label>       
+        <select class="event" id="event" name="eve" required> 
+          <label for="event"></label>             
+           <option value="People">I'm Attending </option>
            <option value="All Event">All Event</option>
            <option value="Wedding Party">Wedding Party</option>
-
-
           </select>
     </div>
 
+   
         <div class="w-100 massage">
-            <textarea name="" id="" cols="30" rows="5" placeholder="special request"></textarea>
+          <label for="Massage"></label>
+            <textarea name="Massage" class="massage" id="Massage" cols="30" rows="6" placeholder="Massage" required autocomplete="off" min="5"></textarea>
         </div>
 
         <div class="w-100 btn">
-            <button class="b-a-t" type="submit">Submit</button>
+            <button class="sub-btn"  type="submit">Submit</button>
         </div>
         
        
@@ -525,6 +526,41 @@
       </div>
 
    <!----------------------- RSVP section Ends here  ------------------->
+
+   <!----------------- footer-section starts here ---------------------->
+   <div class="container-fluid footer-section padding-both">
+
+    <div class="row ">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+       <div class="headings">
+        
+         <h2>Thank You</h2>
+       </div>
+      </div>
+   </div>
+
+
+   <div class="row">
+     <div class="col-md-12">
+      <div class="social-icon">
+        <span class="s-icon fa  fa-twitter"></span>    
+        <span class="s-icon fa  fa-facebook"></span>
+        <span class="s-icon fa  fa-linkedin"></span>
+        <span class="s-icon fa  fa-instagram"></span>
+      </div>
+      <p class="para-style">info@example.com</p> <p>+012 345 6789</p>
+
+      <div class="copyrights">
+        <p>&copy; <span class="c-o">Developer </span> Designed by <span class="c-o">Sonu</span></p>
+      </div>
+      
+     </div>
+   </div>
+
+   </div>
+
+   <!----------------- footer-section Ends here ---------------------->
+  
 
 
 

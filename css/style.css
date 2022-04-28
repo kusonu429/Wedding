@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--Montserrat);
+
 }
 
 html{
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 .inner {
@@ -13,6 +16,8 @@ html{
   width: 100%;
   margin: 0 auto;
 }
+
+
 
 .padding-both{
   padding: 60px 0;
@@ -113,6 +118,8 @@ float: left;
 }
 
 
+ 
+
 /* .nav-hide-show{
  position: fixed;
  top: 300px;
@@ -136,7 +143,7 @@ float: left;
 
 .owl-carousel-1 .item2{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/carousel-2.jpg);
+    url(../img/carousel-2.jpg); 
 }
 
 .owl-carousel-1 .item{
@@ -295,7 +302,6 @@ header  .owl-prev:hover , header  .owl-next:hover{
 .headings{
   text-align: center;
   padding: 15px 0;
-  /* background-color: #858aae; */  
 }
 .headings h1{
   color: var(--orange);
@@ -601,7 +607,7 @@ margin-left: 100px !important;
 /*--------------- Event Section Ends here -----------*/
 
 
-/*------------- Event Section Starts here -------------*/
+/*------------- Family_Friedn Section Starts here -------------*/
 
 .friend_family-section .btn-center{
   text-align: center;
@@ -681,8 +687,166 @@ margin-left: 100px !important;
 
 
 
-/*-------------0 Event Section Ends here --------------*/
+/*------------- Family_Friedn Section Ends here --------------*/
 
+/*----------------- RSVP section starts here -----------------*/
+
+ form{
+   width: 760px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;  
+ }
+
+
+ form .w-50{
+   width: 48.5%;
+ }
+
+ form .w-100{
+   width: 100%;
+ }
+ 
+ form input{
+   width: 100%;
+   padding:15px 3%;
+   text-transform: capitalize;
+   font-size: 1.1rem;
+   font-family: var(--Montserrat);
+   font-weight: 400;
+   outline: none;
+   border: none;
+   background-color: var(--light-grey); 
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+ }
+
+ form input:focus , form .people_event select:focus , form .w-100 .massage:focus , form .btn .sub-btn:focus {
+  border-color: #f3c29f;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(228 122 46 / 25%);
+
+ }
+
+ form .people_event select{
+   width: 100%; 
+   padding:15px 3%;
+   text-transform: capitalize;
+   font-size: 1.1rem;
+   font-family: var(--Montserrat);
+   font-weight: 400;
+   outline: none;
+   border: none;
+   background-color: var(--light-grey);
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+
+ }
+
+ form .w-100 .massage{
+   width: 100%;
+   outline: none;
+   border: none;
+   background-color: var(--light-grey);
+   padding: 10px;
+   font-size: 1.1rem;
+   font-family: var(--Montserrat);
+
+ }
+
+ form .btn .sub-btn {
+   background-color: var(--orange);
+   color: var(--white);
+   outline: none;
+   border: none;
+   padding: 10px 6%;
+   margin-top: 5px;
+   font-size: 1.2rem;
+   font-family: var(--Montserrat);
+   transition: all .5s ease;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+     
+
+ }
+
+ 
+ form .btn .sub-btn:hover{
+    color: #fff;
+    background-color: #d1671b;
+    border-color: #c5611a;
+   }
+
+   
+   form input:focus , form .people_event select:focus , form .w-100 .massage:focus , form .btn .sub-btn:focus {
+    border-color: #f3c29f;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(228 122 46 / 25%);  
+    
+   }
+
+
+
+/*------------------- RSVP section Ends here -------------------*/
+
+
+/*----------------- footer-section starts here -----------------*/
+
+
+
+
+/*----------------- footer-section Ends here -----------------*/
+.footer-section {
+  background-color: var(--dark);
+  text-align: center;  
+  color: var(--white);
+  
+}
+
+.footer-section .headings h2{
+  color: var(--white);
+  font-size: 4.8rem;
+}
+
+.footer-section .social-icon {
+  margin-bottom: 25px;
+}
+
+.footer-section .social-icon .s-icon{
+  border: 2px solid var(--white);
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-right:5px;
+  transition: all .5s ease;
+}
+
+.footer-section .social-icon .s-icon:hover{
+  color: var(--dark);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.footer-section p{
+  display: inline;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-family: var(--Montserrat);
+
+  
+}
+ 
+.footer-section .para-style {
+  border-right: 2px solid var(--white); 
+}
+
+.footer-section .copyrights{
+  margin-top: 20px;
+}
+
+.footer-section .copyrights p .c-o{
+  color: var(--orange);
+}
 
 
 
@@ -746,8 +910,7 @@ margin-left: 100px !important;
   width: 20%;
   display: flex;
   justify-content: flex-end;
-  /* background-color: red; */
-}
+  }
 
 .navigation  nav .hamburger .icon-bars{
   font-size: 1.8rem;
@@ -927,6 +1090,15 @@ float: none !important;
     grid-template-columns: repeat(1,1fr);  
 }
 
+.RSVP-section form{
+  width: 70%;
+}
+
+.RSVP-section form .w-50{
+  width: 100%;
+}
+
+
 }
 
 
@@ -940,6 +1112,11 @@ float: none !important;
 
 
 @media only screen and (max-width:467px){
+
+  .navigation nav .menu {
+    width: 50%;
+  }
+  
 
   .about-section{
     width: 80%;
